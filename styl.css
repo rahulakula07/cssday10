@@ -1,0 +1,26 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.left{
+    position: fixed;
+    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #3f87a6);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;   
+    width: 100vw;
+    height: 10vh;
+}
+.right{
+    display: flex;
+    gap: 50px;
+}
+/* .div{
+    position: relative;
+    top: 10vh;
+} */
+
+
