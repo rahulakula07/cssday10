@@ -1,0 +1,118 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.parent{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+    height: auto;
+}
+.child2{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+@media (max-width:400px){
+  .checkbox-toggle{
+    display: none;
+  }  
+  .l-icon{
+  align-content: center;
+  }
+  .parent{
+    display: flex;
+   position: relative;
+  }
+  .child2{
+    display: flex;
+    display: none;
+    flex-direction: column;
+    padding-top: 10px;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    background-color: black;
+  }
+  .checkbox-toggle:checked ~ .child2{
+    display: block;
+    /* display: none; */
+    
+  }
+}
+
+@media (min-width:401px) and (max-width:768px) {
+    .checkbox-toggle{
+        display: none;
+      }  
+      .l-icon{
+      align-content: center;
+      }
+      .parent{
+        display: flex;
+       position: relative;
+      }
+      .child2{
+        display: flex;
+        flex-direction: column;
+        /* display: none; */
+        padding: 10px;
+        justify-content: center;
+        width: 100%;
+        position: absolute;
+        top: 20px;
+        left: 0px;
+        background-color: black;
+      }
+      .checkbox-toggle:checked ~ .child2{
+        display: block;
+        display: none;
+    
+      }
+}
+@media (min-width:769px) and (max-width:1024px) {
+    *{
+        font-family: cursive;
+    }
+ .checkbox-toggle , .l-icon{
+    display: none;
+ }
+ .parent{
+    font-size: 1.2rem;
+ }
+
+}
+    
+@media (min-width:1025px) and (max-width:1440px) {
+    *{
+        font-family: cursive;
+    }
+ .checkbox-toggle , .l-icon{
+    display: none;
+ }
+ .parent{
+    font-size: 1.2rem;
+ }
+
+
+}
+@media (min-width:1441px) {
+    *{
+        font-family: cursive;
+    }
+    .checkbox-toggle , .l-icon{
+        display: none;
+     }
+     .parent{
+        font-size: 1.7rem;
+    
+     }
+     .child2{
+        font-size: 1.4rem;
+     }
+}
